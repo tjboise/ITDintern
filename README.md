@@ -1,3 +1,5 @@
+[photos of car](https://511.idaho.gov/#:MyRoutes)
+
 ### 6/20
 - Environment set up
 - [x] GPU driver installment
@@ -5,5 +7,7 @@
 - [ ] Install Pytorch
 - [ ] Install some image related packages
 
-- construct a dataset and annotate.
+### demo
+- [ ] construct a dataset and annotate
+- [ ] 
 
