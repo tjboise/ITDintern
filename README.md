@@ -5,5 +5,5 @@
 - [ ] Install Pytorch
 - [ ] Install some image related packages
 
-- vehicle counts
-- [ ] Train a YOLOV5 model. 
+- construct a dataset and annotate.
+
