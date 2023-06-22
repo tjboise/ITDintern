@@ -15,3 +15,5 @@
 - Construct a dataset and annotate
 - [ ] Upload images (100) to cvat.ai
 - [ ] Annotate the images
+- [ ] Revise the YOLOV5 code according to our dataset and run the train.py
+- [ ] A code to count the car numbers based on the results from YOLOV5
