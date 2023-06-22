@@ -8,7 +8,7 @@
 - [x] Install some image related packages
 
 ### 🌳download all images
-- [x] write a python script based on David's code to download [pictures](https://511.idaho.gov/#:MyRoutes).
+- [x] write a [python script](https://github.com/tjboise/ITDintern/blob/main/dataset%20construct.ipynb) based on David's code to download [pictures](https://511.idaho.gov/#:MyRoutes).
 
 
 
