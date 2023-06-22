@@ -1,4 +1,4 @@
-[Camera photos link](https://511.idaho.gov/#:MyRoutes)
+
 
 
 ### Environment set up
@@ -9,7 +9,7 @@
 
 ### download all images
 - [x] write a python script based on David's code to download pictures. 
-
+[Camera photos link](https://511.idaho.gov/#:MyRoutes)
 
 ## demo
 - construct a dataset and annotate
