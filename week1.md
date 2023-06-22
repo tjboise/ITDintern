@@ -8,12 +8,14 @@
 - [x] Install some image related packages
 
 ### 🌳download all images
-- [x] write a python script based on David's code to download pictures. 
+- [x] write a python script based on David's code to download pictures.
+
 [Camera photos link](https://511.idaho.gov/#:MyRoutes)
 
 ## 🌴A small demo for using YOLOV5 in car targeting
 - Construct a dataset and annotate
 - [ ] Upload images (100) to cvat.ai
 - [ ] Annotate the images
+- YOLOV5 training + testing
 - [ ] Revise the YOLOV5 code according to our dataset and run the train.py
 - [ ] A code to count the car numbers based on the results from YOLOV5
