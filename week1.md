@@ -14,7 +14,7 @@
 ## 🌴A small demo for using YOLOV5 in car targeting
 - Construct a dataset and annotate
 - [x] Upload images (150 in total) to [app.cvat.ai](https://app.cvat.ai) which is an online image annotation website.
-- [ ] Annotate the images
+- [x] Annotate the images
 - YOLOV5 training + testing
 - [ ] Revise the YOLOV5 code according to our dataset and run the train.py
 - [ ] A code to count the car numbers based on the results from YOLOV5
