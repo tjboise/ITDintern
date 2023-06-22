@@ -1,9 +1,8 @@
-### 6/20
-- Environment set up
-- [x] GPU driver installment
-- [ ] Install Cuda: it is a necessary for the pytorch to use the GPU in laptop
-- [ ] Install Pytorch
-- [ ] Install some image related packages
+## Weekly report 
 
-- construct a dataset and annotate.
+[Week 1](./week1.md)
+
+## Project 
+
+1. Car counting from images --> calculate AADT based on this.
 
