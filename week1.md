@@ -1,9 +1,9 @@
 
-
+## Week1 Jun. 20 ~ Jun. 25
 
 ### 🌲Environment set up
 - [x] GPU driver installment
-- [ ] Install Cuda: It is a necessary for the pytorch to use the GPU in laptop
+- [ ] Install Cuda: It is a necessary for the pytorch to use the GPU in laptop which would make training faster -->need permission from ITD
 - [x] Install Pytorch
 - [x] Install some image related packages
 
@@ -14,7 +14,7 @@
 
 ## 🌴A small demo for using YOLOV5 in car targeting
 - Construct a dataset and annotate
-- [ ] Upload images (100) to cvat.ai
+- [x] Upload images (150 in total) to [app.cvat.ai](https://app.cvat.ai) which is an online image annotation website.
 - [ ] Annotate the images
 - YOLOV5 training + testing
 - [ ] Revise the YOLOV5 code according to our dataset and run the train.py
