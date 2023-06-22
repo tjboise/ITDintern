@@ -8,7 +8,7 @@
 - [x] Install some image related packages
 
 ### 🌳download all images
-- [x] write a python script based on David's code to download pictures.
+- [x] write a [python script](./data construct.ipynb) based on David's code to download pictures.
 
 [Camera photos link](https://511.idaho.gov/#:MyRoutes)
 
