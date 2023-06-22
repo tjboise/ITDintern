@@ -1,4 +1,8 @@
-[photos of car](https://511.idaho.gov/#:MyRoutes)
+## Weekly report 
 
-Schdule: [Week 1](./week1.md)
+[Week 1](./week1.md)
+
+## Project 
+
+1. Car counting from images --> calculate AADT based on this.
 
