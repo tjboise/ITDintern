@@ -15,6 +15,11 @@
 - Construct a dataset and annotate
 - [x] Upload images (150 in total) to [app.cvat.ai](https://app.cvat.ai) which is an online image annotation website.
 - [x] Annotate the images
+
+<div align="left">
+<img width="600" alt="image" src="https://github.com/tjboise/ITDintern/assets/95270677/5fe75c1a-4e86-4cb6-a6f0-af194b2e83d8">
+</div>
+      
 - YOLOV5 training + testing
 - [ ] Revise the YOLOV5 code according to our dataset and run the train.py
 - [ ] A code to count the car numbers based on the results from YOLOV5
