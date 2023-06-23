@@ -21,5 +21,5 @@
 </div>
       
 - YOLOV5 training + testing
-- [ ] Revise the YOLOV5 code according to our dataset and run the train.py
+- [x] Revise the YOLOV5 code according to our dataset and run the train.py
 - [ ] A code to count the car numbers based on the results from YOLOV5
