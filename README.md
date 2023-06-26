@@ -2,6 +2,8 @@
 
 [Week 1](./week1.md)
 
+[Week 2](./week2.md)
+
 ## Project 
 
 1. Car counting from images --> calculate AADT based on this.
