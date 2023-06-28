@@ -1,14 +1,20 @@
+## Week2 Jun. 26 ~ Jun. 30
 
-### environment stall
+### Environment installation
 - [x] install CUDA-11.8
 - [x] install cudnn
 - [x] pytorch
 
 
-### download images
+### Download images
 - [x] Jun 25 - Jun 26 9am
 - [x] Jun 26 - Jun 27 9am
 - [x] Jun 27 - Jun 28 9am
 
+---
+- [x] code to count the number of cars in an image based on the YOLOV5 code.
+<div align="left">
+<img width="400" alt="image" src="https://github.com/tjboise/ITDintern/assets/95270677/d479c300-9f46-4549-9b06-b285737fec2f">
+</div>
 
-### code to count the number of cars in an image
+- [ ] set the cvat account and start annotation
