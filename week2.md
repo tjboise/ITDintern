@@ -15,6 +15,8 @@
 
 ---
 - [x] code to count the number of cars in an image based on the YOLOV5 code.
+      
+The counting results are stored in a csv file and looks like this:
 <div align="left">
 <img width="400" alt="image" src="https://github.com/tjboise/ITDintern/assets/95270677/d479c300-9f46-4549-9b06-b285737fec2f">
 </div>
