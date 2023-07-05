@@ -9,6 +9,8 @@ Downlaod images:
 
 Data cleaning: 
 
+There are about 13386 images per day produced by the road cameras.
+
 - [ ] detele some unuseful images from the dataset. For example, the image without any cars or totally dark images:
 
 <div align="left">
