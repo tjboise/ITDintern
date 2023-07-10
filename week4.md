@@ -10,3 +10,16 @@ Remove pictures without any cars. It is a very important step before we annotate
 -> after removing some broken file and pictures with no car, an amount of 4930 is left.
 
 -> upload it to the app.cvat.ai
+
+
+
+
+#### Annotation
+
+![image](https://github.com/tjboise/ITDintern/assets/95270677/dc0ee6c7-3d46-412a-9675-8207cdd2f2bf)
+
+Four classes: 
+1. Motorcycles
+2. Cars & light goods (cars, van)
+3. other vehicles (truck)
+4. Others (can't see the car but lights, especially for the night condition)
