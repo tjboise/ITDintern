@@ -98,6 +98,11 @@ def run(
     model = DetectMultiBackend(weights, device=device, dnn=dnn, data=data, fp16=half)
     stride, names, pt = model.stride, model.names, model.pt
     imgsz = check_img_size(imgsz, s=stride)  # check image size
+    # imageinfo = []
+    car_counting = []
+    spot_numbers = []
+    dates = []
+    times = []
 
     # Dataloader
     bs = 1  # batch_size
@@ -109,6 +114,7 @@ def run(
         dataset = LoadScreenshots(source, img_size=imgsz, stride=stride, auto=pt)
     else:
         dataset = LoadImages(source, img_size=imgsz, stride=stride, auto=pt, vid_stride=vid_stride)
+        print('load images successfully!')
     vid_path, vid_writer = [None] * bs, [None] * bs
 
     # Run inference
@@ -137,33 +143,42 @@ def run(
         # Process predictions
         for i, det in enumerate(pred):  # per image
             seen += 1
+            print('seen is : ------------->',seen)
             if webcam:  # batch_size >= 1
                 p, im0, frame = path[i], im0s[i].copy(), dataset.count
                 s += f'{i}: '
             else:
                 p, im0, frame = path, im0s.copy(), getattr(dataset, 'frame', 0)
+                # print('path:',p)
+                # print('image:',im0)
 
             p = Path(p)  # to Path
             save_path = str(save_dir / p.name)  # im.jpg
+            print('save_path:',save_path)
             txt_path = str(save_dir / 'labels' / p.stem) + ('' if dataset.mode == 'image' else f'_{frame}')  # im.txt
             s += '%gx%g ' % im.shape[2:]  # print string
             gn = torch.tensor(im0.shape)[[1, 0, 1, 0]]  # normalization gain whwh
             imc = im0.copy() if save_crop else im0  # for save_crop
             annotator = Annotator(im0, line_width=line_thickness, example=str(names))
+
+            # print('annotator:',annotator)
             if len(det):
                 # Rescale boxes from img_size to im0 size
+
                 det[:, :4] = scale_boxes(im.shape[2:], det[:, :4], im0.shape).round()
 
                 # Print results
                 for c in det[:, 5].unique():
                     n = (det[:, 5] == c).sum()  # detections per class
                     s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
+                    # print('results:--------------------->',s)
 
                 # Write results
                 for *xyxy, conf, cls in reversed(det):
                     if save_txt:  # Write to file
                         xywh = (xyxy2xywh(torch.tensor(xyxy).view(1, 4)) / gn).view(-1).tolist()  # normalized xywh
                         line = (cls, *xywh, conf) if save_conf else (cls, *xywh)  # label format
+                        # print('txt_path',txt_path)
                         with open(f'{txt_path}.txt', 'a') as f:
                             f.write(('%g ' * len(line)).rstrip() % line + '\n')
 
@@ -176,6 +191,7 @@ def run(
 
             # Stream results
             im0 = annotator.result()
+            print('<------------------->')
             if view_img:
                 if platform.system() == 'Linux' and p not in windows:
                     windows.append(p)
@@ -204,16 +220,60 @@ def run(
                     vid_writer[i].write(im0)
 
         # Print time (inference-only)
+        # print('<<-------------------->>')
+        # print(s)
+        # print('ssssssssssss:',s)
+        import re
+        match1 = re.search(r"imagetemp_(\d+)", s)
+        if match1:
+            spot_number = match1.group(1)
+        else:
+            spot_number = ' '
+        match2 = re.search(r"(\d{4}-\d{2}-\d{2})",s)
+
+        if match2:
+            date = match2.group(1)
+        else:
+            date = ' '
+
+        match3 = re.search(r"(\d{6})\.jpg", s)
+        if match3:
+            time = match3.group(1)
+        else:
+            time = ' '
+
+        spot_numbers.append(spot_number)
+        dates.append(date)
+        times.append(time)
+
+
+
+        # imageinfo.append(s)
+        car_counting.append(len(det))
+        # print('<<-------------------->>')
+
         LOGGER.info(f"{s}{'' if len(det) else '(no detections), '}{dt[1].dt * 1E3:.1f}ms")
+        # print('<<-------------------->>')
+        # # car_counting.append(len(det))
+        # print('the detection car is: ', len(det))
 
     # Print results
+    import pandas as pd
+    df = pd.DataFrame({'Site ID': spot_numbers,'Date': dates, 'Time':times, 'car numbers': car_counting})
+    # print(save_dir+'/'+'count.csv')
+    csv_path = str(save_dir / 'count.csv')
+    df.to_csv(csv_path)
+    print('result saved!')
+
     t = tuple(x.t / seen * 1E3 for x in dt)  # speeds per image
+    # print('t',t)
     LOGGER.info(f'Speed: %.1fms pre-process, %.1fms inference, %.1fms NMS per image at shape {(1, 3, *imgsz)}' % t)
     if save_txt or save_img:
         s = f"\n{len(list(save_dir.glob('labels/*.txt')))} labels saved to {save_dir / 'labels'}" if save_txt else ''
         LOGGER.info(f"Results saved to {colorstr('bold', save_dir)}{s}")
     if update:
         strip_optimizer(weights[0])  # update model (to fix SourceChangeWarning)
+    print('end')
 
 
 def parse_opt():
