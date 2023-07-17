@@ -25,7 +25,7 @@ Annotations:
 
 **David:**
 
-Some vehicles are not annotated: 
+- Some vehicles are not annotated: 
 
 <div align="center">
 <img src="https://github.com/tjboise/ITDintern/assets/95270677/c1a66f90-575e-4919-9ed3-0000026a66a3" width=48%/> 
