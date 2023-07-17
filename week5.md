@@ -2,7 +2,7 @@
 
 Annotations: 
 
-Taylor: 
+**Taylor:**
 
 - Some boxes can not include the whole car. 
 - some cars are not included. 
@@ -23,7 +23,7 @@ Taylor:
 </div>
 
 
-David:
+**David:**
 
 Some vehicles are not annotated: 
 
