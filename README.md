@@ -8,3 +8,5 @@
 
 1. Car counting from images --> calculate AADT based on this.
 
+2. pavement segregation.
+
