@@ -6,3 +6,9 @@ Results comparison:
 |:---:| :-----:  | :-------: |:-----:|:-----:|:---------:|:------:|:-----------:|:----:|:---:|:----:|
 |1| 1979 (David + TJ)  | 8:2| YOLOV5 |300|8|yolov5s.pt|[hyp](../results/exp16/hyp.yaml)|0.727|4.5|[exp16](../results/exp16)|
 |2| 2867 (David + TJ +Taylor)  |  8:2| YOLOV5|300|8|yolov5s.pt|[hyp](../results/exp17/hyp.yaml)|0.623 |early stops(no improvement observed in last 100 epochs)| [exp17](../results/exp17) |
+
+There are some improvements from 1 to 2 like: 
+
+![imagetemp_3001_2023-07-04 165642](https://github.com/tjboise/ITDintern/assets/95270677/bd6f2bcc-0be1-4466-bfaf-ae617e8c8feb)
+
+![imagetemp_3001_2023-07-04 165642](https://github.com/tjboise/ITDintern/assets/95270677/888c178f-a06b-4012-a36b-4bab81f3c2e0)
