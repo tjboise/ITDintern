@@ -9,6 +9,13 @@ Results comparison:
 
 There are some improvements from 1 to 2 like: 
 
-![imagetemp_3001_2023-07-04 165642](https://github.com/tjboise/ITDintern/assets/95270677/bd6f2bcc-0be1-4466-bfaf-ae617e8c8feb)
+<div align="center">
+1: <img src="https://github.com/tjboise/ITDintern/assets/95270677/bd6f2bcc-0be1-4466-bfaf-ae617e8c8feb" width=40%/> 
+2: <img src="https://github.com/tjboise/ITDintern/assets/95270677/888c178f-a06b-4012-a36b-4bab81f3c2e0" width=40%/>
+</div>
+but also: 
+<div align="center">
+1: <img src="https://github.com/tjboise/ITDintern/assets/95270677/c7b13e6c-48cb-40d7-8b67-60f80d7a3ae8" width=40%/> 
+2: <img src="https://github.com/tjboise/ITDintern/assets/95270677/42849452-2e02-4ab9-a549-2ad27d4ffdaf" width=40%/>
+</div>
 
-![imagetemp_3001_2023-07-04 165642](https://github.com/tjboise/ITDintern/assets/95270677/888c178f-a06b-4012-a36b-4bab81f3c2e0)
