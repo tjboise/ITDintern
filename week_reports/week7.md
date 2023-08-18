@@ -1,4 +1,4 @@
-## July 31 - Aug 4
+697## July 31 - Aug 4
 
 Results comparison:
 
@@ -7,7 +7,7 @@ Results comparison:
 |1| 1979 (David + TJ)  | 8:2| YOLOV5s |300|8|yolov5s.pt|[hyp](../results/exp16/hyp.yaml)|0.727|4.5|[exp16](../results/exp16)|
 |2| 2867 (David + TJ +Taylor)  |  8:2| YOLOV5s|300|8|yolov5s.pt|[hyp](../results/exp17/hyp.yaml)|0.623 |early stops(no improvement observed in last 100 epochs)| [exp17](../results/exp17) |
 |3| 2867 (David + TJ +Taylor)  |  8:2| YOLOV5s|300|8|exp17-best.pt|[hyp]()|0.628|early stops| [exp18](../results/exp18) |
-|4| 4818 (David + TJ +Taylor+Ak+James)  |  8:2| YOLOV5s|300|8|yolov5s.pt|[hyp]()||| [exp19](../results/exp20) |
+|4| 4818 (David + TJ +Taylor+Ak+James)  |  8:2| YOLOV5s|300|8|yolov5s.pt|[hyp]()|0.697|early stops| [exp19](../results/exp20) |
 
 
 There are some improvements from 1 to 2 like: 
